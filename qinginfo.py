@@ -48,7 +48,7 @@ def getdefaultqres():
     qres={}
     qres.clear()
     qres={
-      'access_key_id':'FDQMOSRGHQKLCLVTGZGO',
+      'access_key_id':'XXXXXXXXXXXXXXXXXXXXXX',
       'offset':0,
       'signature_method':'HmacSHA256',
       'signature_version':'1',
@@ -64,7 +64,7 @@ def getqc_set(qres):
     #首先拼接请求字符串，并对访问URL编码  然后构造被签名串  之后将API密钥的私钥 ( secret_access_key ) 作为key，生成被签名串的 HMAC-SHA256签名
     #醉生成的签名在进行Base64编码，最有将编码得到的以变量signature 添加到最终访问的URL中   得到最后的访问URL
     qingurl='https://api.qingcloud.com/iaas/?'
-    secret_access_key='Xgnkr61pXoOFf7fDJ8lSZYofFOkaOiI0Rt2DqohN'
+    secret_access_key='XXXXXXXXXXXXXXXXXXXXXx'
     aurl=''
     # 拼接url 并将字典中的值进行url encoding 
     for i in sorted(qres):
